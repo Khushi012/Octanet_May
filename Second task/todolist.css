@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+.Box {
+    max-height: 500px auto;
+    width: 500px;
+    background-color: lightcyan;
+    color: lightcoral;
+    margin: 10em auto;
+    border-radius: 20px;
+    border: 2px solid lightcoral;
+    padding: 20px;
+}
+
+h1 {
+    font-size: medium;
+    margin-left: 3em;
+}
+
+#logo {
+    height: 200px;
+}
+
+.task-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#input-section {
+    flex: 1;
+    padding: 8px;
+}
+
+button {
+    padding: 10px 16px;
+    background-color: lightgreen;
+    color: brown;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid lightcoral;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #333;
+}
+
+.cross{
+    position: fixed; /*its keeping all the task in a same distance from the cross icon*/
+    margin-left: 15em;
+}
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+
+.fa-circle-xmark:before, .fa-times-circle:before, .fa-xmark-circle:before {
+    content: "\f057";
+    margin-left: 9em;
+}
+/*
+.task-content .fa-times-circle {
+    position: fixed;
+    margin-left: 25px; /* Fixed margin for delete icon 
+}*/
+
+.completed .fa-circle {
+    color: red; 
+}
+
+
+/* Priority Menu Styles */
+
+.priority-menu {
+    position: absolute;
+    margin-left: 26em;
+    display: none;
+    display: none;
+    background-color: rgb(83, 57, 23);
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.priority-item{
+    color: black;
+}
+
+.today-btn{
+    margin: 3px 3px;
+    padding: none;
+    padding: 4px;
+    background-color: lightgreen;
+    color: brown;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.today-btn:hover{
+    background-color: lightcoral;
+}
+    
+
+.priority-menu.show {
+    display: block;
+}
+
+.flag {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.set-due-date-btn {
+    margin-top: 10px;
+}
+
+/* Calendar Styles */
+.calendar {
+    position: absolute;
+    top: 50px; 
+    right: 0;
+    display: none;
+    
+}
+
+.filters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: lightskyblue;
+    height: 32px;
+    border-radius: 20px;
+}
+
+.filter-btn{
+    padding: 5px;
+    margin: 4px;
+    border: 1px solid lightcoral;
+}
+
+.filter-btn:hover{
+    background-color: lightcoral;
+    transition: ease-in 0.4s;
+}

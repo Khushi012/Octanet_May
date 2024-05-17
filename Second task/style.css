@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 60px;
+    background-color: #cde8e5;
+    color: #4D869C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 320px;
+    font-size: 34px;
+}
+
+
+li {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    margin: 8px;
+    padding: 6px;
+    font-family: fantasy;
+    cursor: pointer;
+}
+
+.login{
+    height: 20px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 10px 30px;
+    cursor: pointer;
+    border: 2px solid #4D869C;
+    padding: 4px;
+    font-size: 14px;
+}
+
+.login:hover{
+   color: #7AB2B2; 
+}
+
+li:hover{
+    color: #7AB2B2;
+}
+
+.search-input{
+    background-color: #d4c1c1;
+    border: 3px solid brown;
+    cursor: pointer;
+}
+
+.login span{
+    cursor: pointer;
+    font-family: fantasy;
+    font-size: 15px;
+    margin: 10px;
+}
+
+
+span {
+    font-size: 14px;
+    height: 20px;
+    margin: 10px 10px 10px 30px;
+    border: 3px solid #cde8e5;
+    cursor: pointer;
+    padding: 3px;
+    background-color: #7AB2B2;
+}
+
+.poster{
+    background-image: url(poster1\ \(2\).jpeg);
+    height: 400px;
+    width: 100%;
+    background-size: cover;
+}
+
+h1{
+    font-size: 70px;
+    text-align: center;
+    margin-top: 120px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+p{
+    font-family: system-ui;
+    font-size: 20px;
+    margin-left: 26em;
+}
+
+button{
+    text-align: center;
+    padding: 10px;
+    margin-left: 52em;
+    margin-top: 2em;
+    background-color: #4D869C;
+    cursor: pointer;
+    border-block-end-width: 4px;
+    border-block-end-style: revert;
+    border-block-end-color: #4D869C;
+}
+
+
+.first-sec{
+    background-color: #eef7ff;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+.first-sec p{
+    text-align: start;
+    margin-left: 0px;
+    background-color: #7AB2B2;
+}
+
+h3{
+    font-weight: bold;
+    font-size: medium;
+}
+
+.second-sec{
+    background-color: #eef7ff;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+.second-sec p{
+    text-align: start;
+    margin-left: 0px;
+    background-color: #7AB2B2;
+}
+
+.third-sec{
+    background-color: #eef7ff;
+    margin: 20px;
+    border: 2px solid black;
+}
+
+.third-sec p{
+    text-align: start;
+    margin-left: 0px;
+    background-color: #7AB2B2;
+}
+
+.last-sec{
+    text-align: center;
+    margin-top: 20px;
+    background-color: #cde8e5;
+    margin: 20px;
+}
+
+.last-sec p{
+    text-align: center;
+    margin-left: 0px;
+}
+
+.last-sec article{
+    font-size: 30px;
+}
+
+/*footer*/
+
+footer{
+    background-color: #cde8e5;
+    margin: 20px;
+}
+h4{
+    text-align: center;
+    color: black;
+}
+.all-f{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.footer-ul li {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    margin: 8px;
+    padding: 6px;
+    font-family: fantasy;
+    cursor: pointer;
+}
+
+.footer-ul li:hover{
+color: #4D869C;
+}
+
+/* for box shadow effect on button
+.btn{
+    background-color: pink;
+    color: blue;
+    transition: box-shadow 0.3s ease;
+}
+.btn:hover{
+    box-shadow: 0 0 10px 5px rgba(0, 255, 0, 0.5);
+}
+*/

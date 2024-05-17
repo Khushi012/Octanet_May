@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="todolist.css">
+</head>
+<body>
+    <main>
+        <div class="Box">
+            <h1>To-Do List <img src="unicorn.png" id="logo"></h1>
+            <div class="filters">
+                <button class="filter-btn" onclick="filterTasks('all')">All</button>
+                <button class="filter-btn" onclick="filterTasks('work')">Work</button>
+                <button class="filter-btn" onclick="filterTasks('education')">Education</button>
+            </div>
+            <div class="task-bar">
+                <input type="text" id="input-section" placeholder="Add your task here">
+                <button class="button" id="addButton">Add</button>
+                   <div class="priority-menu" id="priorityMenu">
+                    <div class="priority-item" style="background-color: red;" onclick="setPriority('red')">Important</div>
+                    <div class="priority-item" style="background-color: orange;" onclick="setPriority('orange')">Medium</div>
+                    <div class="priority-item" style="background-color: yellow;" onclick="setPriority('yellow')">Less Important</div>
+                    <button class="today-btn" onclick="showCalendar()">Today</button>
+                </div>
+            </div>
+            <ul id="list-container">
+                <!-- Tasks will be dynamically added here -->
+            </ul>
+        </div>
+    </main>
+
+    <!-- Calendar Widget -->
+    <div class="calendar" id="calendar">
+        <!-- Calendar implementation -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
